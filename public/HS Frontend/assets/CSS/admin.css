@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.3s;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    /* COLORS */
+    --maincolor: #0f5729;
+    --sectioncolorone: #436850;
+    --sectioncolortwo: #adbc9f;
+    --secondarycolorzero: #fbfada;
+    --secondarycolorone: #24272c;
+    --secondarycolortwo: #e7a823;
+
+    /* FONTS */
+    --mainfont: "Oswald", sans-serif;
+    --secondaryfont: "Montserrat", sans-serif;
+    --secondaryfontone: "DM Serif Display", serif;
+    /* FONT SIZE */
+    --largestfont: 3.5rem;
+    --largefont: 2.5rem;
+    --smallfont: 1.5rem;
+    --smallestfont: 1rem;
+}
+
+/* Scroll Bar */
+/* Define scrollbar track */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Define scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/* Define scrollbar track when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--maincolor);
+}
+
+/* Define scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+    width: 2px;
+}
+
+/* Define scrollbar corner */
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Define scrollbar thumb when dragging */
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--sectioncolorone);
+}
+
+.headings {
+    background-color: var(--sectioncolorone);
+    height: 400px;
+    width: 400px;
+}
+body{
+    background-color: var(--maincolor);
+}
+h1 {
+    font-family: var(--mainfont);
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: var(--largefont);
+}
+h3 {
+    font-size: var(--smallfont);
+}
+h4 {
+    font-size: var(--smallestfont);
+}
+p {
+    font-family: var(--secondaryfont);
+    font-size: var(--smallestfont);
+    color: var(--maincolor);
+}
+a {
+    text-decoration: none;
+    color: var(--secondarycolortwo);
+    font-weight: 700;
+    font-family: var(--mainfont);
+}
+a:hover {
+    color: var(--maincolor);
+}
+
+/* =================== Contact ====================== */
+.contact-holder {
+    position: fixed;
+    top: 50%;
+    right: -265px;
+
+    z-index: 999999999;
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.contact-active {
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-holder .contact-btn {
+    background: var(--maincolor);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff !important;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: var(--secondarycolorzero);
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor) !important;
+}
+
+.contact-card {
+    padding: 20px;
+    width: 265px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: var(--secondarycolorzero);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.contact-card h5 {
+    color: var(--maincolor);
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-card h5:before {
+    position: absolute;
+    content: "";
+    width: 81px;
+    height: 2px;
+    background-color: #ddd;
+    top: 100%;
+    left: -20px;
+}
+
+.contact-card a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #313131;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.contact-card i {
+    color: var(--maincolor);
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============1 HEADER =============== */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondarycolorzero);
+}
+.logo {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    z-index: 99999;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+}
+.socials {
+    color: var(--maincolor);
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.socials i:hover {
+    color: var(--secondarycolortwo);
+    cursor: pointer;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden-menu {
+    position: relative;
+    left: -290px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 290px;
+    background-color: var(--secondarycolorzero);
+    display: none;
+}
+.hidden-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+/* Toggle buttons */
+.toggle-btns {
+    height: 50px;
+    width: 50px;
+    font-size: var(--largefont);
+
+    background-color: var(--secondarycolorzero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.toggle-btns .open {
+    display: block;
+}
+.active .toggle-btns .open {
+    display: none;
+}
+.active .toggle-btns .close {
+    display: block;
+}
+.toggle-btns .close {
+    display: none;
+}
+
+/* =============== END1================= */
+
+.banner {
+    background-color: var(--secondarycolorzero);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 180px 0px;
+}
+.banner .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.banner .image-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.banner img {
+    border-radius: 40px;
+    height: 400px;
+    width: 400px;
+}
+.wrapper{
+    background-color: var(--maincolor);
+}
+/* ========== Responsive header ============= */
+@media screen and (max-width: 992px) {
+    header ul {
+        display: none;
+    }
+    .toggle-btns {
+        position: relative;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+    }
+    .socials {
+        display: none;
+    }
+    .hidden-menu.active {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        width: 290px;
+        background-color: var(--secondarycolorzero);
+    }
+    .hidden-menu.active ul {
+        padding-top: 20px;
+    }
+    .hidden-menu .socials {
+        display: block;
+    }
+}
+@media screen and (max-width: 576px) and (min-width: 320px) {
+    header ul {
+        display: none;
+    }
+}
+
+/* FORM DESIGN */
+.form-container{
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--sectioncolortwo);
+    border-radius: 20px;
+}
+@media screen and (max-width:576px) and (min-width:320px) {
+    .form-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+.image{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.form-container img{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+.form-container form{
+    color: #000;
+    padding: 0;
+    margin:0;
+}
+.section{
+   padding: 40px;
+    background-color: var(--maincolor);
+    margin-top: 100px;
+    width: 100%;
+
+
+
+
+}
+.form-container form button{
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--maincolor);
+}
+/* footer */
+footer{
+    background-color: var(--secondarycolorzero);
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer-list ul{
+    list-style: none;
+}
+.footer-list .socials{
+    padding: 10px;
+}
+.footer-list{
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+}
