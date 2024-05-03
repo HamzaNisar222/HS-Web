@@ -20,21 +20,18 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex p-5 footer-list">
-          <ul>
-            <h3 style="color: var(--maincolor)">Navigate</h3>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="{{ route('admin.add-category') }}">Categories</a>
-            </li>
-            <li>
-              <a href="#">Families</a>
-            </li>
-            <li>
-              <a href="#">Products</a>
-            </li>
-          </ul>
+            <ul>
+                <h3 style="color: var(--maincolor)">Navigate</h3>
+                <li>
+                    <a href="{{ route('user.index') }}#banner">Home</a>
+                </li>
+                <li>
+                    <a href="{{ route('user.index') }}#intro">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
           <div class="socials">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>

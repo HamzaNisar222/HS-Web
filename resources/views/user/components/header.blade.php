@@ -6,10 +6,10 @@
          </div>
          <ul>
              <li>
-                 <a href="#banner">Home</a>
+                 <a href="{{ route('user.index') }}#banner">Home</a>
              </li>
              <li>
-                 <a href="#intro">About Us</a>
+                 <a href="{{ route('user.index') }}#intro">About Us</a>
              </li>
              <li>
                  <a href="#">Contact Us</a>
@@ -28,17 +28,17 @@
      </div>
  </header>
  <div class="hidden-menu">
-     <ul>
-         <li>
-             <a href="#">Home</a>
-         </li>
-         <li>
-             <a href="#">About Us</a>
-         </li>
-         <li>
-             <a href="#">Contact Us</a>
-         </li>
-     </ul>
+    <ul>
+        <li>
+            <a href="#banner">Home</a>
+        </li>
+        <li>
+            <a href="#intro">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
      <div class="socials">
          <i class="fa-brands fa-facebook-f"></i>
          <i class="fa-brands fa-twitter"></i>
