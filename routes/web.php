@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\MailController;
 
 use App\Http\Controllers\FamilyController;
 use App\Http\Middleware\AdminMiddleware;
@@ -85,6 +86,6 @@ Route::name('user.')->prefix('user')->group(function () {
     Route::get('/', [UserController::class, 'index'])->name('index');
     Route::get('/showrelatedfamilies/{id}', [UserController::class, 'category_family'])->name('show.category.families');
     Route::get('/showrelatedproducts/{id}', [UserController::class, 'family_product'])->name('show.families.products');
-
+    Route::post('/contact', [MailController::class, 'sendEmail'])->name('contact.send');
 
 });

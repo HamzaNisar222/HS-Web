@@ -62,7 +62,7 @@
                                 <img src="{{ asset('HS Frontend/assets/Images/logo.png') }}" style="margin: 0 auto; width:150px; height:150px;" alt="" />
                                 <h3>Contact Us</h3>
                             </div>
-                            <form action="" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('user.contact.send') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
