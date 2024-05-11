@@ -1,4 +1,4 @@
-<section class="product section" id="product">
+<section class="product section" id="products">
     <div class="container">
        <h1 style="text-align: center;">Our Categories</h1>
     <div class="category-slider" style="padding-left: 40px;">

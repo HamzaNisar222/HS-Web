@@ -14,7 +14,7 @@
             <h1 style="text-align: center;">{{ $category->name }}</h1>
             <div class="row">
                 @foreach ($families as $family )
-                 <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+                 <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
                     <div class="card">
                        <a href="{{ route('user.show.families.products', $family->id) }}">
                         <img class="card-img-top" src="{{ asset($family->image) }}" alt="Card image cap">
@@ -35,6 +35,15 @@
         @include('user.components.footer')
     </div>
 
+
+    <style>
+        @media screen and (max-width:576px) and (min-width:320px){
+               .families{
+                     padding:0!important;
+
+               }
+        }
+    </style>
 </body>
 
 @include('user.components.scripts')

@@ -6,7 +6,7 @@
       </div>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="{{ route('admin.home') }}">Home</a>
         </li>
         <li>
             <a href="{{ route('admin.show.category')}}">Categories</a>
@@ -21,11 +21,13 @@
             <a href="{{ route('admin.show.brands') }}">Brands</a>
           </li>
       </ul>
+
+
       <div class="socials">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
+        <a href="https://www.facebook.com/hussain.enterprises2017?mibextid=LQQJ4d" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/saeedriaz1?s=21"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hussainenterprises1122?igsh=MXU3YjRmMDdxMjZqeA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/in/saeed-riaz-0b3828301"><i class="fa-brands fa-linkedin-in"></i></a>
         <form method="POST" action="{{ route('logout') }}">
             @csrf
             <a href="#" onclick="event.preventDefault(); this.closest('form').submit();">
@@ -55,13 +57,16 @@
       </li>
     </ul>
     <div class="socials">
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
-      <a href="{{ route('logout') }}" style="color: black;">
-        <i class="fa-solid fa-right-from-bracket"></i>
-      </a>
+        <a href="https://www.facebook.com/hussain.enterprises2017?mibextid=LQQJ4d" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/saeedriaz1?s=21"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hussainenterprises1122?igsh=MXU3YjRmMDdxMjZqeA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/in/saeed-riaz-0b3828301"><i class="fa-brands fa-linkedin-in"></i></a>
+      <form method="POST" action="{{ route('logout') }}">
+        @csrf
+        <a href="#" onclick="event.preventDefault(); this.closest('form').submit();">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+    </form>
     </div>
   </div>
   </header>

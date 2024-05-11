@@ -17,7 +17,8 @@
 {{-- Data tables --}}
 <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
 
-
+{{-- fav icon --}}
+<link rel="icon" href="{{ asset('HS Frontend/assets/Images/logo.png') }}" type="image/x-icon">
 <!-- my links -->
 
 <link rel="stylesheet" href="{{ asset('HS Frontend/assets/CSS/admin.css') }}" />

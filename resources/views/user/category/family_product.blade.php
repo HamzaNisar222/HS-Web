@@ -58,7 +58,7 @@
         </div>
 
         <section class="section families"
-            style="width:100%; height:500px;
+            style="
         background-color:var(--sectioncolorone); text-align:center; padding:100px; ">
 
             <h1 style="text-align: center;">{{ $family->name }}</h1>

@@ -204,7 +204,7 @@ header {
     position: relative;
     height: 80px;
     width: 80px;
-    z-index: 99999;
+    z-index: 1;
 }
 
 header ul {
@@ -221,7 +221,11 @@ header ul {
     gap: 20px;
     font-size: 20px;
 }
-.socials i:hover {
+.socials a {
+    color: var(--maincolor);
+    text-decoration: none;
+}
+.socials a:hover {
     color: var(--secondarycolortwo);
     cursor: pointer;
 }
@@ -254,7 +258,15 @@ header ul {
 
     gap: 30px;
 }
+.hidden-menu .socials a{
+    color: var(--maincolor);
+    text-decoration: none;
 
+}
+.hidden-menu .socials a:hover {
+    color: var(--secondarycolortwo);
+    cursor: pointer;
+}
 /* Toggle buttons */
 .toggle-btns {
     height: 50px;
@@ -330,6 +342,7 @@ header ul {
         top: 0;
         height: 100vh;
         display: flex;
+        z-index: 999;
         flex-direction: column;
         align-items: center;
         justify-content: center;

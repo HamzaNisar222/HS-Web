@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- my links -->
+<link rel="icon" href="{{ asset('HS Frontend/assets/Images/logo.png') }}" type="image/x-icon">
+
 
 <link rel="stylesheet" href="{{ asset('HS Frontend/assets/CSS/style.css') }}" />
 <title>Hussain Enterprises</title>
