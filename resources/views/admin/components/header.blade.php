@@ -25,9 +25,9 @@
 
       <div class="socials">
         <a href="https://www.facebook.com/hussain.enterprises2017?mibextid=LQQJ4d" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://x.com/saeedriaz1?s=21"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/hussainenterprises1122?igsh=MXU3YjRmMDdxMjZqeA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-         <a href="https://www.linkedin.com/in/saeed-riaz-0b3828301"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/saeedriaz1?s=21" target="blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hussainenterprises1122?igsh=MXU3YjRmMDdxMjZqeA%3D%3D&utm_source=qr" target="blank"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/in/saeed-riaz-0b3828301" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
         <form method="POST" action="{{ route('logout') }}">
             @csrf
             <a href="#" onclick="event.preventDefault(); this.closest('form').submit();">
@@ -58,9 +58,9 @@
     </ul>
     <div class="socials">
         <a href="https://www.facebook.com/hussain.enterprises2017?mibextid=LQQJ4d" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://x.com/saeedriaz1?s=21"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/hussainenterprises1122?igsh=MXU3YjRmMDdxMjZqeA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-         <a href="https://www.linkedin.com/in/saeed-riaz-0b3828301"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/saeedriaz1?s=21" target="blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hussainenterprises1122?igsh=MXU3YjRmMDdxMjZqeA%3D%3D&utm_source=qr" target="blank"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/in/saeed-riaz-0b3828301" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
       <form method="POST" action="{{ route('logout') }}">
         @csrf
         <a href="#" onclick="event.preventDefault(); this.closest('form').submit();">
