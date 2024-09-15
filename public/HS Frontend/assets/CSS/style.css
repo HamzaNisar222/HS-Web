@@ -437,3 +437,28 @@ footer{
     z-index: 1!important;
 }
 
+
+.button-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ListCategories{
+    color:#e7a823;
+    background-color:#436850;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ListCategories:hover{
+    background-color:#adbc9f;
+    color:#436850;
+    border: 1px solid #436850;
+}
+

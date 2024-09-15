@@ -10,6 +10,15 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class CategoryController extends Controller
 {
+//   Index for category
+public function listAllCategories(){
+
+    $categories = Category::all();
+    return view('user.category.list_categories', compact('categories')); 
+}
+
+
+
   // ADD CATEGORY VIEW
     public function show(){
     $categories= Category::all();

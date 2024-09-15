@@ -12,5 +12,10 @@
 
        @endforeach
     </div>
+
+    <div class="button-holder">
+        <a class="ListCategories" href="{{route('categories.list')}}">Browse All Categories</a>
+    </div>
     </div>
   </section>
+

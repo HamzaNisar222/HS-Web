@@ -88,4 +88,8 @@ Route::name('user.')->prefix('user')->group(function () {
     Route::get('/showrelatedproducts/{id}', [UserController::class, 'family_product'])->name('show.families.products');
     Route::post('/contact', [MailController::class, 'sendEmail'])->name('contact.send');
 
+
+
 });
+
+Route::get('/categories', [CategoryController::class, 'listAllCategories'])->name('categories.list');
