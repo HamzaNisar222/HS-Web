@@ -1,16 +1,17 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\BrandController;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\UserController;
+use App\Http\Middleware\AdminMiddleware;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BrandController;
 
 use App\Http\Controllers\FamilyController;
-use App\Http\Middleware\AdminMiddleware;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CategoryController;
 
 
 
@@ -93,3 +94,12 @@ Route::name('user.')->prefix('user')->group(function () {
 });
 
 Route::get('/categories', [CategoryController::class, 'listAllCategories'])->name('categories.list');
+
+Route::get('optimize',function(){
+    Artisan::call('optimize');
+    return 'Optimized';
+});
+
+Route::get('test',function(){
+    return 'working';
+});
